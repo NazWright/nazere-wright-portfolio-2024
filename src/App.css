@@ -1,3 +1,13 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -7,6 +17,27 @@
   pointer-events: none;
 }
 
+.main-image-bg {
+  background-color: #151414;
+}
+
+.main-image-bg img {
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.naz-wright-primary-bg-color {
+  background-color: rgb(105, 60, 174);
+}
+
+.speed-dial button {
+  background-color: rgb(105, 60, 174);
+  transition: 0.3s ease-in-out;
+}
+
+.speed-dial button:hover {
+  background-color: rgb(108, 170, 227);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +45,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(223, 227, 230);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
 }
 
 .App-link {
@@ -35,4 +67,87 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.merienda-heading {
+  font-family: "Merienda", cursive !important;
+  font-optical-sizing: auto;
+  font-weight: 600 !important;
+  font-style: normal;
+  font-size: 4.4rem !important;
+  margin-bottom: 1.5rem !important;
+  color: rgb(105, 60, 174);
+}
+
+.merienda-heading,
+.decorate {
+  text-shadow: 0px 0px 4px rgb(108, 170, 227), 0px 0px 6px rgb(108, 170, 227);
+}
+
+.swap {
+  color: rgb(108, 170, 227);
+  text-shadow: 0px 0px 4px rgb(105, 60, 174), 0px 0px 6px rgb(105, 60, 174);
+}
+
+.sub-heading {
+  font-family: "Merienda", cursive !important;
+  font-optical-sizing: auto;
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  margin-bottom: 1rem !important;
+  background-color: rgb(105, 60, 174);
+  padding: 0.7rem;
+  border-radius: 30px;
+  color: white;
+  text-shadow: 0px 0px 4px rgb(19, 14, 26), 0px 0px 6px rgb(19, 14, 26);
+  box-shadow: 0px 0px 2px black, 0px 0px 3px black;
+  transition: 0.4s ease-in-out;
+}
+
+.sub-heading:hover {
+  background-color: rgb(105, 169, 230);
+}
+
+.p-text {
+  font-weight: 300 !important;
+  font-style: italic;
+  color: black;
+  font-family: "Roboto Serif", serif;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(105, 103, 103);
+}
+
+.height-100-vh {
+  height: 100vh;
+}
+
+.naz-wright-buttons {
+  background-color: rgb(105, 60, 174) !important;
+  padding: 1rem !important;
+  border-radius: 30px !important;
+  font-family: "Roboto Serif", serif !important;
+  text-shadow: 0px 0px 1px rgb(19, 14, 26), 0px 0px 2px rgb(19, 14, 26);
+  text-transform: capitalize !important;
+  transition: 0.3s ease-in-out;
+}
+
+.naz-wright-buttons:hover {
+  background-color: rgb(108, 170, 227) !important;
+}
+
+.naz-wright-logo {
+  position: absolute;
+  height: 13%;
+  top: 1.5rem;
+  left: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.naz-wright-logo:hover {
+  scale: 1.1;
 }
