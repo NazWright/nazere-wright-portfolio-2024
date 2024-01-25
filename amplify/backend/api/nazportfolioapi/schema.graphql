@@ -1,0 +1,8 @@
+type Project @model {
+  id: ID!
+  title: String!
+  short_description: String!
+  long_description: String
+}
+
+# //API KEY: da2-ylcrehzbxvgy7fmmx6wxqnus3y

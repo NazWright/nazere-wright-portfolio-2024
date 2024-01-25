@@ -1,0 +1,22 @@
+{
+  "api": {
+    "nazportfolioapi": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2024-01-30T03:32:18.458Z",
+              "apiKeyExpirationDays": 7,
+              "description": "API Key for authentication"
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  }
+}
